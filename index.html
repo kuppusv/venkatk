@@ -1,1 +1,988 @@
-<h>My Books</h>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venkat K | Author</title>
+    <meta
+      name="description"
+      content="Official author website for Venkat, novelist and storyteller, featuring Two Parallel Lines, Saviour Club, and Mentryyx Game."
+    />
+    <meta property="og:title" content="Venkat | Author" />
+    <meta
+      property="og:description"
+      content="Discover Venkat's novels, read about the author, and explore books that span family drama and techno-thriller fiction."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root,
+      [data-theme='light'] {
+        --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
+        --text-sm: clamp(0.875rem, 0.8rem + 0.35vw, 1rem);
+        --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+        --text-lg: clamp(1.125rem, 1rem + 0.75vw, 1.5rem);
+        --text-xl: clamp(1.5rem, 1.2rem + 1.25vw, 2.25rem);
+        --text-2xl: clamp(2rem, 1.2rem + 2.5vw, 3.5rem);
+        --text-3xl: clamp(2.75rem, 1.4rem + 4vw, 5rem);
+        --space-1: 0.25rem;
+        --space-2: 0.5rem;
+        --space-3: 0.75rem;
+        --space-4: 1rem;
+        --space-5: 1.25rem;
+        --space-6: 1.5rem;
+        --space-8: 2rem;
+        --space-10: 2.5rem;
+        --space-12: 3rem;
+        --space-16: 4rem;
+        --space-20: 5rem;
+        --space-24: 6rem;
+        --radius-sm: 0.5rem;
+        --radius-md: 0.875rem;
+        --radius-lg: 1.25rem;
+        --radius-xl: 1.75rem;
+        --radius-full: 9999px;
+        --color-bg: #f6f3ee;
+        --color-surface: #fcfaf7;
+        --color-surface-2: #f1ece5;
+        --color-surface-offset: #ece5dc;
+        --color-border: rgba(40, 37, 29, 0.12);
+        --color-divider: rgba(40, 37, 29, 0.08);
+        --color-text: #241f1a;
+        --color-text-muted: #6f675d;
+        --color-text-faint: #9c9388;
+        --color-primary: #195c63;
+        --color-primary-hover: #12474d;
+        --color-primary-soft: rgba(25, 92, 99, 0.12);
+        --color-accent: #8c5b2e;
+        --color-text-inverse: #f9f7f3;
+        --shadow-sm:
+          0 1px 2px rgba(20, 14, 8, 0.05), 0 6px 24px rgba(20, 14, 8, 0.04);
+        --shadow-md: 0 12px 36px rgba(20, 14, 8, 0.08);
+        --content: 1180px;
+        --font-display: 'Instrument Serif', Georgia, serif;
+        --font-body: 'Inter', 'Segoe UI', sans-serif;
+        --transition: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      [data-theme='dark'] {
+        --color-bg: #171412;
+        --color-surface: #1f1b18;
+        --color-surface-2: #26211d;
+        --color-surface-offset: #2d2722;
+        --color-border: rgba(246, 240, 231, 0.12);
+        --color-divider: rgba(246, 240, 231, 0.09);
+        --color-text: #f1ece4;
+        --color-text-muted: #b8aea1;
+        --color-text-faint: #867b71;
+        --color-primary: #6fb3ba;
+        --color-primary-hover: #90c9cf;
+        --color-primary-soft: rgba(111, 179, 186, 0.16);
+        --color-accent: #d2a36b;
+        --color-text-inverse: #161310;
+        --shadow-sm:
+          0 1px 2px rgba(0, 0, 0, 0.24), 0 10px 26px rgba(0, 0, 0, 0.2);
+        --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.28);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme='light']) {
+          --color-bg: #171412;
+          --color-surface: #1f1b18;
+          --color-surface-2: #26211d;
+          --color-surface-offset: #2d2722;
+          --color-border: rgba(246, 240, 231, 0.12);
+          --color-divider: rgba(246, 240, 231, 0.09);
+          --color-text: #f1ece4;
+          --color-text-muted: #b8aea1;
+          --color-text-faint: #867b71;
+          --color-primary: #6fb3ba;
+          --color-primary-hover: #90c9cf;
+          --color-primary-soft: rgba(111, 179, 186, 0.16);
+          --color-accent: #d2a36b;
+          --color-text-inverse: #161310;
+          --shadow-sm:
+            0 1px 2px rgba(0, 0, 0, 0.24), 0 10px 26px rgba(0, 0, 0, 0.2);
+          --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.28);
+        }
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: var(--font-body);
+        font-size: var(--text-base);
+        line-height: 1.65;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(25, 92, 99, 0.1),
+            transparent 28%
+          ),
+          radial-gradient(
+            circle at bottom right,
+            rgba(140, 91, 46, 0.08),
+            transparent 22%
+          ),
+          var(--color-bg);
+        color: var(--color-text);
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button {
+        font: inherit;
+      }
+      .skip-link {
+        position: absolute;
+        left: var(--space-4);
+        top: -3rem;
+        background: var(--color-primary);
+        color: var(--color-text-inverse);
+        padding: var(--space-3) var(--space-4);
+        border-radius: var(--radius-full);
+        z-index: 100;
+      }
+      .skip-link:focus {
+        top: var(--space-4);
+      }
+      :focus-visible {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 3px;
+        border-radius: var(--radius-sm);
+      }
+      .container {
+        width: min(calc(100% - 2rem), var(--content));
+        margin: 0 auto;
+      }
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: color-mix(in srgb, var(--color-bg) 86%, transparent);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--color-divider);
+      }
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-4);
+        padding: 0.9rem 0;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: var(--space-3);
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .brand-mark {
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(
+          135deg,
+          var(--color-primary),
+          var(--color-accent)
+        );
+        color: #fff;
+        box-shadow: var(--shadow-sm);
+        flex-shrink: 0;
+      }
+      .brand-title {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+      .brand-title span:last-child {
+        font-size: var(--text-xs);
+        font-weight: 500;
+        color: var(--color-text-muted);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: var(--space-2);
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+      .nav a,
+      .theme-toggle {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.65rem 1rem;
+        border-radius: var(--radius-full);
+        font-size: var(--text-sm);
+        color: var(--color-text-muted);
+        transition:
+          background var(--transition),
+          color var(--transition),
+          transform var(--transition);
+      }
+      .nav a:hover,
+      .nav a.active,
+      .theme-toggle:hover {
+        background: var(--color-primary-soft);
+        color: var(--color-text);
+        transform: translateY(-1px);
+      }
+      .theme-toggle {
+        border: 1px solid var(--color-border);
+        background: var(--color-surface);
+        color: var(--color-text);
+        cursor: pointer;
+      }
+      .hero {
+        padding: clamp(4rem, 7vw, 7rem) 0 clamp(3rem, 5vw, 5rem);
+      }
+      .hero-grid {
+        display: grid;
+        gap: var(--space-8);
+        align-items: center;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--space-2);
+        padding: 0.45rem 0.85rem;
+        border-radius: var(--radius-full);
+        background: var(--color-primary-soft);
+        color: var(--color-primary);
+        font-size: var(--text-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+      }
+      .hero h1 {
+        font-family: var(--font-display);
+        font-size: var(--text-3xl);
+        line-height: 0.95;
+        margin: var(--space-5) 0;
+        max-width: 11ch;
+        letter-spacing: -0.03em;
+      }
+      .hero p {
+        color: var(--color-text-muted);
+        max-width: 62ch;
+        margin: 0 0 var(--space-6);
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        margin-bottom: var(--space-8);
+      }
+      .btn {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: var(--space-2);
+        padding: 0.9rem 1.25rem;
+        border-radius: var(--radius-full);
+        font-weight: 600;
+        font-size: var(--text-sm);
+        border: 1px solid transparent;
+        transition:
+          transform var(--transition),
+          background var(--transition),
+          border-color var(--transition),
+          color var(--transition),
+          box-shadow var(--transition);
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+      .btn-primary {
+        background: var(--color-primary);
+        color: var(--color-text-inverse);
+        box-shadow: var(--shadow-sm);
+      }
+      .btn-primary:hover {
+        background: var(--color-primary-hover);
+      }
+      .btn-secondary {
+        background: var(--color-surface);
+        border-color: var(--color-border);
+        color: var(--color-text);
+      }
+      .stat-row {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--space-3);
+      }
+      .stat-card {
+        background: color-mix(in srgb, var(--color-surface) 76%, transparent);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        padding: var(--space-5);
+        box-shadow: var(--shadow-sm);
+      }
+      .stat-card strong {
+        display: block;
+        font-size: var(--text-xl);
+        margin-bottom: var(--space-1);
+        font-family: var(--font-display);
+        font-weight: 400;
+      }
+      .hero-panel {
+        background: linear-gradient(
+          180deg,
+          color-mix(in srgb, var(--color-surface) 86%, transparent),
+          color-mix(in srgb, var(--color-surface-2) 95%, transparent)
+        );
+        border: 1px solid var(--color-border);
+        border-radius: 28px;
+        padding: clamp(1.2rem, 3vw, 2rem);
+        box-shadow: var(--shadow-md);
+      }
+      .hero-panel-card {
+        background: var(--color-surface);
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid var(--color-border);
+      }
+      .hero-panel-copy {
+        padding: var(--space-6);
+        display: grid;
+        gap: var(--space-4);
+      }
+      .hero-panel-copy small {
+        color: var(--color-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: var(--text-xs);
+        font-weight: 700;
+      }
+      .hero-panel-copy h2 {
+        margin: 0;
+        font-size: var(--text-xl);
+        font-family: var(--font-display);
+        font-weight: 400;
+        line-height: 1;
+      }
+      .hero-panel-copy p {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+      }
+      main section {
+        padding: clamp(3.5rem, 6vw, 6rem) 0;
+      }
+      .section-heading {
+        display: grid;
+        gap: var(--space-3);
+        margin-bottom: var(--space-8);
+        max-width: 45rem;
+      }
+      .section-heading span {
+        color: var(--color-accent);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: var(--text-xs);
+        font-weight: 700;
+      }
+      .section-heading h2 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: var(--text-2xl);
+        line-height: 1;
+        font-weight: 400;
+      }
+      .section-heading p {
+        margin: 0;
+        color: var(--color-text-muted);
+      }
+      .books-grid {
+        display: grid;
+        gap: var(--space-5);
+      }
+      .book-card {
+        display: grid;
+        background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+        border: 1px solid var(--color-border);
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+      }
+      .book-visual {
+        min-height: 240px;
+        padding: var(--space-6);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        isolation: isolate;
+      }
+      .book-visual::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.18));
+        z-index: -1;
+      }
+      .book-card:nth-child(1) .book-visual {
+        background: linear-gradient(145deg, #0f5962, #133639);
+      }
+      .book-card:nth-child(2) .book-visual {
+        background: linear-gradient(145deg, #6d3f5b, #2b2437);
+      }
+      .book-card:nth-child(3) .book-visual {
+        background: linear-gradient(145deg, #1c334f, #0c171f);
+      }
+      .book-kicker {
+        display: inline-flex;
+        align-self: flex-start;
+        padding: 0.45rem 0.8rem;
+        border-radius: var(--radius-full);
+        background: rgba(255, 255, 255, 0.14);
+        backdrop-filter: blur(10px);
+        font-size: var(--text-xs);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+      }
+      .book-visual h3 {
+        margin: 0;
+        font-family: var(--font-display);
+        font-size: clamp(2rem, 4vw, 2.9rem);
+        line-height: 0.95;
+        font-weight: 400;
+        max-width: 8ch;
+      }
+      .book-body {
+        padding: var(--space-6);
+        display: grid;
+        gap: var(--space-4);
+      }
+      .book-subtitle {
+        color: var(--color-accent);
+        font-weight: 700;
+        font-size: var(--text-sm);
+      }
+      .book-body p {
+        margin: 0;
+        color: var(--color-text-muted);
+      }
+      .book-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+        margin-top: var(--space-2);
+      }
+      .book-note {
+        color: var(--color-text-faint);
+        font-size: var(--text-xs);
+      }
+      .about-wrap {
+        display: grid;
+        gap: var(--space-8);
+        align-items: center;
+      }
+      .author-photo-frame {
+        background: linear-gradient(
+          180deg,
+          color-mix(in srgb, var(--color-surface) 86%, transparent),
+          color-mix(in srgb, var(--color-surface-2) 95%, transparent)
+        );
+        border: 1px solid var(--color-border);
+        border-radius: 28px;
+        padding: var(--space-4);
+        box-shadow: var(--shadow-md);
+        max-width: 460px;
+      }
+      .author-photo-frame img {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        object-fit: cover;
+        border-radius: 22px;
+      }
+      .about-copy {
+        display: grid;
+        gap: var(--space-4);
+      }
+      .about-copy p {
+        margin: 0;
+        color: var(--color-text-muted);
+      }
+      .quote-card {
+        margin-top: var(--space-5);
+        padding: var(--space-5);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        background: var(--color-surface);
+        box-shadow: var(--shadow-sm);
+      }
+      .quote-card strong {
+        display: block;
+        margin-bottom: var(--space-2);
+        color: var(--color-text);
+        font-size: var(--text-sm);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      .site-footer {
+        padding: var(--space-8) 0 var(--space-12);
+        border-top: 1px solid var(--color-divider);
+      }
+      .footer-grid {
+        display: grid;
+        gap: var(--space-4);
+        align-items: center;
+      }
+      .footer-grid p {
+        margin: 0;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+      }
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--space-3);
+      }
+      .footer-links a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        color: var(--color-text-muted);
+        font-size: var(--text-sm);
+      }
+      .footer-links a:hover {
+        color: var(--color-text);
+      }
+      @media (min-width: 900px) {
+        .hero-grid {
+          grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+        }
+        .books-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        .about-wrap {
+          grid-template-columns: minmax(300px, 420px) minmax(0, 1fr);
+        }
+        .footer-grid {
+          grid-template-columns: 1fr auto;
+        }
+      }
+      @media (max-width: 780px) {
+        .header-inner {
+          flex-direction: column;
+          align-items: stretch;
+        }
+        .nav {
+          justify-content: flex-start;
+        }
+        .stat-row {
+          grid-template-columns: 1fr;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Venkat author home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5 18.5V5.8C5 5.36 5.36 5 5.8 5H17.2C17.64 5 18 5.36 18 5.8V18.5L11.5 15.2L5 18.5Z"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 9.2H15.8M8 12H14.2"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="brand-title">
+            <span>Venkat</span>
+            <span>Author & storyteller</span>
+          </span>
+        </a>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#books">Books</a>
+          <a href="#about">Author Bio</a>
+          <a href="#contact">Buy Books</a>
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Switch theme"
+          >
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div>
+            <span class="eyebrow">Three published novels</span>
+            <h1>
+              Stories shaped by memory, family, and the edge of technology.
+            </h1>
+            <p>
+              Venkat writes emotionally grounded fiction that moves between
+              India and Singapore, between intimate family truths and
+              high-stakes suspense. His books bring together human
+              relationships, cultural identity, and the quiet tensions that
+              change lives forever.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#books">Explore the books</a>
+              <a class="btn btn-secondary" href="#about">Read the author bio</a>
+            </div>
+            <div class="stat-row" aria-label="Author summary">
+              <article class="stat-card">
+                <strong>3</strong
+                ><span
+                  >Published novels across family drama and techno-thriller
+                  fiction</span
+                >
+              </article>
+              <article class="stat-card">
+                <strong>India → Singapore</strong
+                ><span
+                  >Stories shaped by lived experience across cultures and
+                  countries</span
+                >
+              </article>
+              <article class="stat-card">
+                <strong>Latest</strong
+                ><span
+                  >Mentryyx Game, a high-stakes novel where engineering meets
+                  obsession</span
+                >
+              </article>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Featured release">
+            <article class="hero-panel-card">
+              <div class="hero-panel-copy">
+                <small>Featured title</small>
+                <h2>Mentryyx Game</h2>
+                <p>
+                  Power vs Machine — a techno-thriller that pushes science,
+                  fear, and human will toward the breaking point.
+                </p>
+                <a
+                  class="btn btn-primary"
+                  href="https://amzn.in/d/064zxqU5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Buy now on Amazon</a
+                >
+              </div>
+            </article>
+          </aside>
+        </div>
+      </section>
+      <section id="books">
+        <div class="container">
+          <div class="section-heading">
+            <span>Books</span>
+            <h2>A small collection of deeply human stories.</h2>
+            <p>
+              The website highlights each book with clear summaries, strong
+              calls to action, and a clean reading experience designed for
+              readers discovering the author for the first time.
+            </p>
+          </div>
+          <div class="books-grid">
+            <article class="book-card">
+              <div class="book-visual" aria-hidden="true">
+                <span class="book-kicker">Novel 01</span>
+                <h3>Two Parallel Lines</h3>
+              </div>
+              <div class="book-body">
+                <div class="book-subtitle">
+                  A Story of Family, Secrets, and Silent Sacrifices
+                </div>
+                <p>
+                  Set across India and Singapore, this novel follows Krishna as
+                  he uncovers long-hidden family secrets, forgotten traditions,
+                  and the emotional cost of silent sacrifice.
+                </p>
+                <p>
+                  As love and betrayal collide, he must confront the truth of
+                  his father's past and decide whether forgiveness can free him
+                  from the weight of what came before.
+                </p>
+                <div class="book-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://amzn.in/d/06JlWocF"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Buy now</a
+                  >
+                </div>
+                <span class="book-note"
+                  >Amazon purchase link opens in a new tab.</span
+                >
+              </div>
+            </article>
+            <article class="book-card">
+              <div class="book-visual" aria-hidden="true">
+                <span class="book-kicker">Novel 02</span>
+                <h3>Saviour Club</h3>
+              </div>
+              <div class="book-body">
+                <div class="book-subtitle">Where Hope is Reborn</div>
+                <p>
+                  Friendship, family, ambition, and regret shape the lives of
+                  Sundar, Mohan, Darshini, and Divya from carefree college years
+                  into the difficult realities of adult life.
+                </p>
+                <p>
+                  It is a story about how one decision can redirect everything,
+                  and about the people who remain beside us when trust frays and
+                  love becomes complicated.
+                </p>
+                <div class="book-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://amzn.in/d/0grNrUCH"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Buy now</a
+                  >
+                </div>
+                <span class="book-note"
+                  >Amazon purchase link opens in a new tab.</span
+                >
+              </div>
+            </article>
+            <article class="book-card">
+              <div class="book-visual" aria-hidden="true">
+                <span class="book-kicker">Novel 03</span>
+                <h3>Mentryyx Game</h3>
+              </div>
+              <div class="book-body">
+                <div class="book-subtitle">Power vs Machine</div>
+                <p>
+                  This techno-thriller races toward a collision between
+                  engineering brilliance and a terrifying biological force that
+                  defies explanation.
+                </p>
+                <p>
+                  Damu, a gifted student hiding from a traumatic past, is
+                  pursued by Ashok, whose obsession turns science into a
+                  nightmare and forces a battle over what power should never
+                  exist.
+                </p>
+                <div class="book-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://amzn.in/d/064zxqU5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Buy now</a
+                  >
+                </div>
+                <span class="book-note"
+                  >Amazon purchase link opens in a new tab.</span
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container about-wrap">
+          <div class="author-photo-frame">
+            <img
+              src="./assets/venkat-author.jpg"
+              alt="Portrait of author Venkat seated and smiling toward the camera"
+              width="1200"
+              height="1500"
+              loading="lazy"
+            />
+          </div>
+          <div class="about-copy">
+            <div class="section-heading" style="margin-bottom: 0">
+              <span>Author bio</span>
+              <h2>Writing across home, distance, and identity.</h2>
+            </div>
+            <p>
+              Venkat was born and raised in India and has loved stories for as
+              long as he can remember. Now based in Singapore, he works as a
+              cybersecurity professional while enjoying family life with his
+              wife and two sons.
+            </p>
+            <p>
+              Mentryyx Game is his third and latest novel, following Two
+              Parallel Lines and Saviour Club. Writing remains a passion he is
+              grateful to pursue, and becoming a storyteller has been a dream he
+              has carried since childhood.
+            </p>
+            <p>
+              His fiction is shaped by the experience of growing up in India and
+              building a life abroad, blending emotional realism, cultural
+              nuance, and the tensions of modern life into the worlds he
+              creates.
+            </p>
+            <div class="quote-card">
+              <strong>Polished bio note</strong>
+              <p>
+                The biography has been refined into a more concise third-person
+                version that reads better for an author website, media page, and
+                future book listings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="container">
+          <div class="section-heading">
+            <span>Get the books</span>
+            <h2>Start with the story that speaks to you.</h2>
+            <p>
+              Each title links directly to Amazon so readers can move from
+              discovery to purchase in one step. This section also works well as
+              the page’s conversion-focused close.
+            </p>
+          </div>
+          <div class="hero-actions">
+            <a
+              class="btn btn-primary"
+              href="https://amzn.in/d/06JlWocF"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy Two Parallel Lines</a
+            >
+            <a
+              class="btn btn-secondary"
+              href="https://amzn.in/d/0grNrUCH"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy Saviour Club</a
+            >
+            <a
+              class="btn btn-secondary"
+              href="https://amzn.in/d/064zxqU5"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Buy Mentryyx Game</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> Venkat. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#books">Books</a>
+          <a href="#about">Author Bio</a>
+          <a href="#top">Back to top</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      ;(function () {
+        const root = document.documentElement
+        const toggle = document.querySelector('[data-theme-toggle]')
+        let theme = window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        root.setAttribute('data-theme', theme)
+        const setIcon = (currentTheme) => {
+          toggle.innerHTML =
+            currentTheme === 'dark'
+              ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2.2M12 19.8V22M4.93 4.93l1.56 1.56M17.51 17.51l1.56 1.56M2 12h2.2M19.8 12H22M4.93 19.07l1.56-1.56M17.51 6.49l1.56-1.56"></path></svg>'
+              : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>'
+          toggle.setAttribute(
+            'aria-label',
+            currentTheme === 'dark'
+              ? 'Switch to light mode'
+              : 'Switch to dark mode',
+          )
+        }
+        setIcon(theme)
+        toggle.addEventListener('click', function () {
+          theme = theme === 'dark' ? 'light' : 'dark'
+          root.setAttribute('data-theme', theme)
+          setIcon(theme)
+        })
+        document.getElementById('year').textContent = new Date().getFullYear()
+        const sections = [...document.querySelectorAll('main section[id]')]
+        const navLinks = [...document.querySelectorAll('.nav a')]
+        const activateNav = () => {
+          let current = sections[0] && sections[0].id
+          sections.forEach((section) => {
+            const rect = section.getBoundingClientRect()
+            if (rect.top <= 120 && rect.bottom >= 160) current = section.id
+          })
+          navLinks.forEach((link) => {
+            link.classList.toggle(
+              'active',
+              link.getAttribute('href') === '#' + current,
+            )
+          })
+        }
+        activateNav()
+        window.addEventListener('scroll', activateNav, { passive: true })
+      })()
+    </script>
+  </body>
+</html>

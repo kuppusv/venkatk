@@ -295,6 +295,23 @@
         gap: var(--space-3);
         margin-bottom: var(--space-8);
       }
+      .hero-feature-row {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      
+      .hero-feature-row h2 {
+        margin: 0;
+      }
+      
+      .hero-feature-thumb {
+        width: 70px;
+        height: 105px;
+        object-fit: cover;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
       .btn {
         min-height: 48px;
         display: inline-flex;
@@ -735,7 +752,17 @@
             <article class="hero-panel-card">
               <div class="hero-panel-copy">
                 <small>Featured title</small>
-                <h2>Mentryyx Game</h2>
+                <div class="hero-feature-row">
+                  <h2>Mentryyx Game</h2>
+                  <img
+                    class="hero-feature-thumb"
+                    src="MentryyxGame.jpg"
+                    alt="Cover of Mentryyx Game"
+                    width="70"
+                    height="105"
+                    loading="lazy"
+                  />
+                </div>
                 <p>
                   Power vs Machine — a techno-thriller that pushes science,
                   fear, and human will toward the breaking point.

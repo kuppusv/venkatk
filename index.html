@@ -474,13 +474,20 @@
         font-weight: 400;
         max-width: 8ch;
       }
+      .book-title-row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .book-title-row h3 {
+        margin: 0;
+      }
       .book-thumb {
-        display: block;
-        margin-top: 0.75rem;
-        width: 60px;
-        height: 90px;
+        width: 40px;
+        height: 60px;
         object-fit: cover;
         border-radius: 6px;
+        flex-shrink: 0;
       }
       .book-body {
         padding: var(--space-6);
@@ -758,46 +765,48 @@
           </div>
           <div class="books-grid">
             <article class="book-card">
-  <div class="book-visual" aria-hidden="true">
-    <span class="book-kicker">Novel 01</span>
-    <h3>Two Parallel Lines</h3>
-    <img
-      class="book-thumb"
-      src="TwoParallellLines.png"
-      alt="Small cover of Two Parallel Lines"
-      width="60"
-      height="90"
-      loading="lazy"
-    />
-  </div>
-  <div class="book-body">
-    <div class="book-subtitle">
-      A Story of Family, Secrets, and Silent Sacrifices
-    </div>
-    <p>
-      Set across India and Singapore, this novel follows Krishna as
-      he uncovers long-hidden family secrets, forgotten traditions,
-      and the emotional cost of silent sacrifice.
-    </p>
-    <p>
-      As love and betrayal collide, he must confront the truth of
-      his father's past and decide whether forgiveness can free him
-      from the weight of what came before.
-    </p>
-    <div class="book-actions">
-      <a
-        class="btn btn-primary"
-        href="https://amzn.in/d/06JlWocF"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Buy now</a
-      >
-    </div>
-    <span class="book-note"
-      >Amazon purchase link opens in a new tab.</span
-    >
-  </div>
-</article>
+              <div class="book-visual" aria-hidden="true">
+                <span class="book-kicker">Novel 01</span>
+                <div class="book-title-row">
+                  <h3>Two Parallel Lines</h3>
+                  <img
+                    class="book-thumb"
+                    src="TwoParallellLines.png"
+                    alt="Small cover of Two Parallel Lines"
+                    width="40"
+                    height="60"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="book-body">
+                <div class="book-subtitle">
+                  A Story of Family, Secrets, and Silent Sacrifices
+                </div>
+                <p>
+                  Set across India and Singapore, this novel follows Krishna as
+                  he uncovers long-hidden family secrets, forgotten traditions,
+                  and the emotional cost of silent sacrifice.
+                </p>
+                <p>
+                  As love and betrayal collide, he must confront the truth of
+                  his father's past and decide whether forgiveness can free him
+                  from the weight of what came before.
+                </p>
+                <div class="book-actions">
+                  <a
+                    class="btn btn-primary"
+                    href="https://amzn.in/d/06JlWocF"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Buy now</a
+                  >
+                </div>
+                <span class="book-note"
+                  >Amazon purchase link opens in a new tab.</span
+                >
+              </div>
+            </article>
             <article class="book-card">
               <div class="book-visual" aria-hidden="true">
                 <span class="book-kicker">Novel 02</span>
